@@ -1,0 +1,49 @@
+package lec19_java_arrayList;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class UseOfArrayList04 {
+
+	public static void main(String[] args) {
+
+		ArrayList ar = new ArrayList(); // warning for not using generic data type
+		ar.add("Alex"); // index [0] 
+		ar.add("Michael");
+		ar.add("Jennifer"); // index[2]
+		ar.add("Brian");
+		ar.add(45); 
+		ar.add(false);
+		ar.add(""); 
+		ar.add(3, "Alison"); // Assign Alison to index 3, before going to line 25
+		ar.add("Alfred");
+		ar.add("Jeff");
+		ar.add(5, 34.556); // Important re-indexing
+		ar.add("Michael");
+		ar.add('M'); // Here char type
+		
+		ar.remove(2); // Remove the index number 2 after all function till line 23
+		ar.remove(9); // below index 5 will not remove before index 9 of this line
+		ar.remove(5);
+		
+		System.out.println("The size of the ArrayList is: " + ar.size() + "\n"); // In Array this is length
+		System.out.println("\n All the value of ArrayList: " + ar); //ArrayList accept all data type
+		
+		System.out.println("^^^^^^^^^^^^^ no need line 33-37 ^^^^^^^^^^^^^^^^ ");
+		System.out.println("Single index value: " + ar.get(0)); // output:
+		System.out.println("Single index value: " + ar.get(1)); // output:
+		System.out.println("Single index value: " + ar.get(4)); // output:
+		System.out.println("Single index value: " + ar.get(6)); // output:
+		System.out.println("Last index value: " + ar.get(ar.size()-1));
+		
+		// Iterator is the legacy type. Old system, first loop of Java
+		System.out.println("\n------------- Accessing the elements of the specified arrayList by using Iterator -------------");
+		Iterator iterator = ar.iterator();
+		while(iterator.hasNext()) {
+			System.out.println(iterator.next());
+		}
+		
+
+	}
+
+}
