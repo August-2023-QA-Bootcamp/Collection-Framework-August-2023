@@ -2,6 +2,7 @@ package lec20_java_linkedList;
 
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.ListIterator;
 
 public class UseOfLinkedList01 {
 
@@ -55,11 +56,48 @@ public class UseOfLinkedList01 {
 		
 		// New
 		System.out.println("========= ListIterator ==========");
-		List
+		ListIterator<String> listIterator = ll.listIterator();
+		while (listIterator.hasNext()) {
+			System.out.println(listIterator.next());		
+		}
+		
+		// New
+		System.out.println("\n--------------------------------");
+		// addFirst(E element) --> Inserts the specified element at the beginning of this list.
+		ll.addFirst("Clinton"); // new here
+		// addLast(E element) --> Appends the specified element to the end of this list.
+		ll.addLast("Obama"); // new here
 		
 		
+		// set(int index, E element) --> Replaces the element at the specified position in this list with the specified element.
+		ll.set(1, "Trump");// new here, replacing the value from second
 		
+		// remove(int index) --> Removes the element at the specified position in this list. Shifts anysubsequent elements to the left 
+		ll.remove(3);  //removing third index
 		
+		System.out.println("Printing first index value of LinkedList: " + ll.get(0));
+		System.out.println("Printing last index value of LinkedList: " + ll.get(ll.size()-1)); // last index
+		System.out.println("Printing index value of LinkedList: " + ll.get(1));
+		System.out.println("Printing index value of LinkedList: " + ll.get(2));
+		System.out.println("Printing index value of LinkedList: " + ll.get(3));
+		System.out.println("Printing index value of LinkedList: " + ll.get(4));
+		System.out.println(ll);
+		
+		System.out.println("\n--------------------------------");
+		// contains(Object o) --> Returns true if this list contains the specified element.
+		System.out.println(ll.contains("Obama"));
+		
+		// New
+		System.out.println("\n--------------------------------");
+		// removeFirst() --> Removes and returns the first element from this list.
+		ll.removeFirst();
+		
+		// removeLast() --> Removes and returns the last element from this list.
+		ll.removeLast();
+		System.out.println("Printing first index value of LinkedList: " + ll.get(0));
+		System.out.println("Printing second index value of LinkedList: " + ll.get(1));
+		System.out.println("Printing last index value of LinkedList: " + ll.get(ll.size()-1));
+		System.out.println("Printing second last index value of LinkedList: " + ll.get(ll.size()-2));
 		
 		
 		

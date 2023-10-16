@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
 
 public class UseOfArrayList02 {
 
@@ -28,12 +29,13 @@ public class UseOfArrayList02 {
 		System.out.println(list.size());
 		System.out.println(list);
 		
-		// To print all data, we can use any kind of loop or Iterator
-		System.out.println("\n------------- Accessing the elements of the specified arrayList by using Iterator -------------");
-		Iterator iterator = list.iterator();
-		while (iterator.hasNext()) {
-				System.out.println(iterator.next());		
-		}	
+		// New
+		// To print all data, we can use any kind of loop, Iterator orListIterator
+		System.out.println("\n------------- Accessing the elements of the specified arrayList by using ListIterator -------------");
+		ListIterator<String> listIterator = list.listIterator();
+		while (listIterator.hasNext()) {
+			System.out.println(listIterator.next());		
+		}
 		
 		System.out.println("\n--------------------------------");
 		// Use of indexOf(), Returns the index of the first occurrence of the specified element in this list, 
@@ -69,6 +71,8 @@ public class UseOfArrayList02 {
 		list.removeAll(arrayList);
 		System.out.println(list.size());
 		System.out.println("After using removeAll method the new Array List: \n" + list);
+		
+		// list.removeAll(list); // not possible
 
 		System.out.println("\n--------------------------------");
 		// set(int index, E element) --> Replaces the element at the specified position in this list with the specified element.
