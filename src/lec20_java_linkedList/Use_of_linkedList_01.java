@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.ListIterator;
 
-public class UseOfLinkedList01 {
+public class Use_of_linkedList_01 {
 
 	public static void main(String[] args) {
 		LinkedList<String> ll = new LinkedList<>();

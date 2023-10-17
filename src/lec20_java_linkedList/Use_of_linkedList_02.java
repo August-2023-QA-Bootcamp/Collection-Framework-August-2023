@@ -2,7 +2,7 @@ package lec20_java_linkedList;
 
 import java.util.LinkedList;
 
-public class UseOfLinkedList02 {
+public class Use_of_linkedList_02 {
 
 	public static void main(String[] args) {
 		LinkedList<String> ll = new LinkedList<String>();

@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
-public class UseOfLinkedList03 {
+public class Use_of_linkedList_03 {
 
 	public static void main(String[] args) {
 		// Raw --> Hetrogenious

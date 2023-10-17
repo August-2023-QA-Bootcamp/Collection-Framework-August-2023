@@ -2,7 +2,7 @@ package lec20_java_linkedList;
 
 import java.util.LinkedList;
 
-public class UseOfLinkedList04 {
+public class Use_of_linkedList_04 {
 
 	public static void main(String[] args) {
 		StudyGroup s1 = new StudyGroup("Joe", 80, "Biden");
