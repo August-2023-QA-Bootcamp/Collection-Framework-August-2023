@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 
-public class UseOfArrayList02 {
+public class Use_of_arrayList_02 {
 
 	public static void main(String[] args) {
 		// We can assigned indexing, line 18, 20, .....

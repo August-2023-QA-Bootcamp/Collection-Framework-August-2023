@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 
-public class UseOfArrayList05 {
+public class Use_of_arrayList_05 {
 // Unnecessary
 	public static void main(String[] args) {
 		int limit = 5;

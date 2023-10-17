@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 
-public class UseOfArrayList03 {
+public class Use_of_arrayList_03 {
 
 	public static void main(String[] args) {
 		// We can have Heterogeneous data or we can make it Generic [A specific data type]

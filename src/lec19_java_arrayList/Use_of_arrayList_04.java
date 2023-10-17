@@ -2,7 +2,7 @@ package lec19_java_arrayList;
 
 import java.util.ArrayList;
 
-public class UseOfArrayList04 {
+public class Use_of_arrayList_04 {
 
 	public static void main(String[] args) {
 		StudyGroup s1 = new StudyGroup("Joe", 80, "Biden");

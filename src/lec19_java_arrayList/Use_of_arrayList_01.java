@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.ListIterator;
 
-public class UseOfArrayList01 {
+public class Use_of_arrayList_01 {
 
 	public static void main(String[] args) {
 		// how we store data--------------

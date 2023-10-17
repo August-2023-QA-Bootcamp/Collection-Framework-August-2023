@@ -3,7 +3,7 @@ package lec19_java_arrayList;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class UseOfArrayList06 {
+public class Use_of_arrayList_06 {
 	public static void main(String[] args) {
 		ArrayList<Integer> ar = new ArrayList<Integer>();
 		System.out.println("Please enter int type number");
