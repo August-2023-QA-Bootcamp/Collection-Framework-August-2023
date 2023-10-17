@@ -67,15 +67,41 @@ public class UseOfArrayList03 {
 		// Using Integer type
 		// Below ar4 is a Generic type object
 		ArrayList<Integer> ar4 = new ArrayList<Integer>();
-		ar4.add(483);
-		ar4.add(484);
+		ar4.add(48);
+		ar4.add(34);
 		ar4.add(485);
 		ar4.set(1, 488);	
+		ar4.add(3);
+		ar4.add(8);
+		ar4.add(2487);
+		ar4.set(1, 23);
 		
 		System.out.println("\n------------- Accessing the elements of the specified arrayList by using for each loop -------------");
 		for(Integer i: ar4) {
 			System.out.println(i);
 		}
+		
+		System.out.println("\n--------------------------------");
+		// if no sort method present, how you will find the lowest and highest number?
+		// you can use loop and can give condition
+		// This process can be used for any data type	
+		int lowest = ar4.get(0); // You are assuming first index is the lowest
+		for (int i = 0; i < ar4.size(); i++) {
+			if (ar4.get(i) < lowest) {
+				lowest = ar4.get(i);
+			}
+		}
+		System.out.println("Lowest Number:" + lowest);
+
+		int highest = ar4.get(0);
+		for (int i = 0; i < ar4.size(); i++) {
+			if (ar4.get(i) > highest) {
+				highest = ar4.get(i);
+			}
+		}
+		System.out.println("Highest Number:" + highest);
+		
+		
 		
 	}
 
