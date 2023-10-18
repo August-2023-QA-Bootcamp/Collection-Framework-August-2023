@@ -138,6 +138,11 @@ public class Use_of_arrayList_02 {
   
         // Print the sorted ArrayList 
         System.out.println("Sorted ArrayList in Ascending order : " + list); 
+        
+        System.out.println("\n--------------------------------");
+        // Printed in descending Order
+        Collections.sort(list, Collections.reverseOrder());
+		System.out.println("Sorted list in descending order: " + list);
 		
 		System.out.println("\n------------- Use of clear() -------------");
 		System.out.println("Before : " + list);
