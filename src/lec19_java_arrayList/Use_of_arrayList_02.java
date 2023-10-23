@@ -30,7 +30,7 @@ public class Use_of_arrayList_02 {
 		System.out.println(list);
 		
 		// New
-		// To print all data, we can use any kind of loop, Iterator orListIterator
+		// To print all data, we can use any kind of loop, Iterator or ListIterator
 		System.out.println("\n------------- Accessing the elements of the specified arrayList by using ListIterator -------------");
 		ListIterator<String> listIterator = list.listIterator();
 		while (listIterator.hasNext()) {
@@ -110,6 +110,11 @@ public class Use_of_arrayList_02 {
 		list.set(4, null);
 		System.out.println(list);
 		
+		System.out.println("\n--------------- new -----------------");
+		System.out.println("Original list: " + list); 
+		Collections.reverse(list);
+		System.out.println("Reversed list: " + list); 
+		
 		System.out.println("\n--------------------------------");
 		// use of retainAll()--> only keeps common value between two ArrayList obj
 		ArrayList<String> al = new ArrayList<>(); // creating new ArrayList
@@ -139,7 +144,7 @@ public class Use_of_arrayList_02 {
         // Print the sorted ArrayList 
         System.out.println("Sorted ArrayList in Ascending order : " + list); 
         
-        System.out.println("\n--------------------------------");
+        System.out.println("\n--------------- new -----------------");
         // Printed in descending Order
         Collections.sort(list, Collections.reverseOrder());
 		System.out.println("Sorted list in descending order: " + list);
