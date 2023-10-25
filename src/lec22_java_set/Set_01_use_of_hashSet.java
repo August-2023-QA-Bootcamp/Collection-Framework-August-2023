@@ -7,6 +7,8 @@ public class Set_01_use_of_hashSet {
 
 	public static void main(String[] args) {
 		// HashSet class implements Set Interface
+		// Why need Set? 
+		// When you need to store only unique objects/data/element
 		Set<Integer> set1 = new HashSet<>();
 		set1.add(15);
 		set1.add(36);
@@ -27,15 +29,15 @@ public class Set_01_use_of_hashSet {
 		// this HashSet using add() method, it actually call put() method [From Map] on internally created HashMap object 
 		// with element you have specified as it’s key and constant Object called “PRESENT” as it’s value. 
 		// So we can say that a Set achieves uniqueness internally through HashMap because it can compare the inserted data with the existing Data.
-		// When it finds duplicate, it can ignore that data, so no duplicate data is stored.
+		// When it finds duplicate, it can ignore the first data, and enter the similar next data, so no duplicate data is stored.
 		
 		
 		// The outcome what we see, how it is ordered?
 		// Ans: By hashing. what is hashing?
-		// every data have a hash code, that is divided by initial capacity 16, and there is a remainder
-		// from 0 to 16 and so on, those remainder are considered as a node and the data stored there.
+		// every data have a hash code, that is divided by initial capacity 16, so there will be a remainder
+		// from 0 to 15 [total 16 node] and so on, those remainder are considered as a node of Bucket Number and the data stored there.
 		// for example: which have 0 remainder, that data will come first, then for remainder 1, remainder 2, remainder 3 and so on
-		// now if 2 data have same remainder, then first one will be in first, then next one will be in the next node
+		// now if 2 data have same remainder, then first data will be in first place, then next one will be after the first data, inside the same node
 		
 		System.out.println("Hashcode of set1: " + set1.hashCode()); // This hash code is for the set1 object only
 		

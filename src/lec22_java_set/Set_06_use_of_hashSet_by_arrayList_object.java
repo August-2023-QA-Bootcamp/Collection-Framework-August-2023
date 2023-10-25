@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Set_06_use_of_hashSet_by_arrayList_object {
-
+	// Not necessary
 	public static void main(String[] args) {
 		ArrayList<Integer> list1 = new ArrayList<>();
 		list1.add(5);
@@ -28,6 +28,7 @@ public class Set_06_use_of_hashSet_by_arrayList_object {
 			for (int i = 0; i < single.size(); i++) {
 				System.out.println(single.get(i));
 			}
+			//System.out.println(single);
 
 		}
 
